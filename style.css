@@ -154,7 +154,7 @@ h2 {
         max-width: calc(100% - 80px);
         max-height: calc(100% - 80px);
         border-radius: 12px;
-        margin: 40px;
+        margin: 40px 40px 0px 40px;
     }
 }
 
