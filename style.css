@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    color: #854632;
+    font-family: "Outfit", serif;
+}
+
+.main__image {
+    width: 100%;
+}
+
+.main__description {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 32px 32px 32px;
+    gap: 24px;
+}
+
+.main__description h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: #312E2C;
+}
+
+.main__description p {
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    color: #5F564D;
+}
+
+.main__preparationtime {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 40px 32px 32px 32px;
+    background-color: #FFF7FB;
+}
+
+.main__preparationtime h2 {
+    margin: 24px 24px 0px 24px;
+    color: #7A284E;
+    font-family: "Outfit", serif;
+}
+
+.main__preparationtime ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0px 24px 24px 24px;
+    list-style-position: inside;
+    color: #5F564D;
+    font-family: "Outfit", serif;
+}
+
+.main__preparationtime ul li::marker {
+    color: #7A284E;
+}
+
+.main__ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px;
+}
+
+.main__ingredients ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-position: outside;
+    color: #5F564D;
+    font-family: "Outfit", serif;
+}
+
+.main__ingredients ul li {
+    margin-left: 2rem;
+}
+
+.main__ingredients ul li::marker {
+    color: #854632;
+}
+
+.main__ingredients ol {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-position: outside;
+    color: #5F564D;
+    font-family: "Outfit", serif;
+}
+
+.main__ingredients ol li {
+    margin-left: 2rem;
+}
+
+.main__ingredients ol li::marker {
+    color: #854632;
+}
+
+.main__nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px;
+}
+
+.main__nutrition p {
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    color: #5F564D;
+}
+
+.main__nutrition table {
+    border-collapse: collapse;
+}
+
+.main__nutrition tr:last-child td {
+    border-style: none;
+}
+
+.main__nutrition td {
+    border-bottom: 1px solid #E3DDD7;
+    padding: 12px;
+    font-family: "Outfit", serif;
+    color: #5F564D;
+}
+
+.main__nutrition td:last-child {
+    color: #854632;
+    font-weight: 600;
+}
+
+@media (min-width:768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: #F3E5D7;
+    }
+
+    .main {
+        width: 80%;
+        margin: 128px 48px;
+        border-radius: 24px;
+        background-color: white;
+    }
+
+    .main__image {
+        box-sizing: border-box;
+        max-width: calc(100% - 80px);
+        max-height: calc(100% - 80px);
+        border-radius: 12px;
+        margin: 40px;
+    }
+}
+
+@media (min-width:1440px) {
+    .main {
+        width: 51%;
+    }
+}
